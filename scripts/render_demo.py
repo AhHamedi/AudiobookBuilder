@@ -167,7 +167,7 @@ def main() -> None:
                 ("$ audiobook-build build demo/tracks \\", CYAN),
                 ('    --title "The Long Way Home" --author "A. Narrator"', CYAN),
                 ("", TEXT),
-                ("Audiobook builder  v1.0.0", AMBER),
+                ("Audiobook builder  v1.0.1", AMBER),
                 ("AAC .m4b with chapters for macOS Books", MUTED),
             ],
             0.35,

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="Audio folders flowing into a chaptered audiobook" width="900">
+  <img src="https://raw.githubusercontent.com/AhHamedi/AudiobookBuilder/main/assets/hero.png" alt="Audio folders flowing into a chaptered audiobook" width="900">
 </p>
 
 <h1 align="center">AudiobookBuilder</h1>
@@ -12,13 +12,13 @@
   <a href="https://github.com/AhHamedi/AudiobookBuilder/actions/workflows/ci.yml"><img src="https://github.com/AhHamedi/AudiobookBuilder/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://pypi.org/project/audiobook-builder/"><img src="https://img.shields.io/pypi/v/audiobook-builder" alt="PyPI version"></a>
   <a href="https://pypi.org/project/audiobook-builder/"><img src="https://img.shields.io/pypi/pyversions/audiobook-builder" alt="Python versions"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-57c7d4" alt="MIT license"></a>
+  <a href="https://github.com/AhHamedi/AudiobookBuilder/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-57c7d4" alt="MIT license"></a>
 </p>
 
 AudiobookBuilder turns naturally ordered MP3, M4A, WAV, or FLAC tracks into one Apple Books-ready audiobook. It encodes AAC audio, writes a chapter for every source file, embeds useful metadata and optional cover art, and supports whole-series batch jobs.
 
 <p align="center">
-  <img src="assets/demo.gif" alt="A real AudiobookBuilder terminal session converting three MP3 tracks into a chaptered M4B" width="900">
+  <img src="https://raw.githubusercontent.com/AhHamedi/AudiobookBuilder/main/assets/demo.gif" alt="A real AudiobookBuilder terminal session converting three MP3 tracks into a chaptered M4B" width="900">
 </p>
 
 ## Why it exists
@@ -213,8 +213,8 @@ ruff format --check .
 pytest
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributor workflow and [CHANGELOG.md](CHANGELOG.md) for release history.
+See [CONTRIBUTING.md](https://github.com/AhHamedi/AudiobookBuilder/blob/main/CONTRIBUTING.md) for the complete contributor workflow and [CHANGELOG.md](https://github.com/AhHamedi/AudiobookBuilder/blob/main/CHANGELOG.md) for release history.
 
 ## License
 
-AudiobookBuilder is available under the [MIT License](LICENSE).
+AudiobookBuilder is available under the [MIT License](https://github.com/AhHamedi/AudiobookBuilder/blob/main/LICENSE).

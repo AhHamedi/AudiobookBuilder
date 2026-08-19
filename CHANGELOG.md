@@ -2,6 +2,10 @@
 
 All notable changes to AudiobookBuilder are documented here.
 
+## 1.0.1 — 2026-08-19
+
+- Use absolute GitHub asset and documentation links so the PyPI project page renders correctly.
+
 ## 1.0.0 — 2026-08-19
 
 - Build chaptered `.m4b` audiobooks from MP3, M4A, WAV, and FLAC files.
