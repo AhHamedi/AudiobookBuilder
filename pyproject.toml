@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiobook-builder"
+version = "1.0.0"
+description = "Build chaptered M4B audiobooks for Apple Books from folders of audio files"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Ahmed Hamedi", email = "ahmed@hamedi.net" },
+]
+keywords = ["audiobook", "m4b", "apple-books", "ffmpeg", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Sound/Audio :: Conversion",
+]
+dependencies = [
+    "typer>=0.12,<1",
+    "rich>=13,<15",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.2",
+    "pytest>=8",
+    "pytest-cov>=5",
+    "pillow>=11",
+    "ruff>=0.9",
+    "twine>=5",
+]
+
+[project.scripts]
+audiobook-build = "audiobook_builder.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AhHamedi/AudiobookBuilder"
+Documentation = "https://github.com/AhHamedi/AudiobookBuilder#readme"
+Issues = "https://github.com/AhHamedi/AudiobookBuilder/issues"
+Source = "https://github.com/AhHamedi/AudiobookBuilder"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --cov=audiobook_builder --cov-report=term-missing"
+testpaths = ["tests"]
+markers = [
+    "integration: requires working ffmpeg and ffprobe binaries",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["audiobook_builder"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 85
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/audiobook_builder/cli.py" = ["B008"]
